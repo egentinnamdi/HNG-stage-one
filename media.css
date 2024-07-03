@@ -1,0 +1,97 @@
+@media (max-width: 780px) {
+  body {
+    min-width: 100vw;
+    font-size: 11px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .first {
+    font-size: 18px;
+    padding: 15px;
+    text-align: justify;
+  }
+  #second {
+    min-height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .items {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 15vh;
+    font-size: 16px;
+  }
+
+  /* SLACK PROFILE PICTURE */
+  #slack-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #slack-pic img {
+    border-radius: 50%;
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  /* SLACK DETAILS */
+  #slack-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+  }
+  .align-left {
+    text-align: center;
+    width: 50%;
+    padding: 20px 0;
+  }
+  #slack-details span {
+    display: block;
+  }
+
+  /* LINKS */
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links span {
+    margin-bottom: 5px;
+  }
+  a {
+    color: #c9f31d;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
