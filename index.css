@@ -1,0 +1,134 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3fr 1fr;
+  background-color: #181717;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-transform: capitalize;
+}
+.first {
+  background: linear-gradient(to top right, #1d1d1d65, #1d1d1d71),
+    url("./public/images/Rectangle 1.png");
+  height: 70vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+#second {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.items {
+  background: #1d1d1d;
+  height: 30%;
+  width: 70%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.items div {
+  grid-row: span 2;
+  margin-right: 10px;
+}
+.img {
+  padding: 15px;
+}
+.img img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+footer {
+  background-color: #1d1d1d;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 0;
+  column-gap: 100px;
+}
+
+/* SLACK PROFILE PICTURE */
+#slack-pic {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  grid-row: span 2;
+}
+#slack-pic img {
+  border-radius: 50%;
+}
+
+/* SLACK DETAILS */
+#slack-details {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  line-height: 30px;
+
+  & {
+    span {
+      font-weight: 300;
+    }
+    #name::before {
+      content: "name: ";
+      font-weight: 500;
+    }
+    #email::before {
+      content: "email: ";
+      font-weight: 500;
+    }
+    #time::before {
+      content: "time (UTC): ";
+      font-weight: 500;
+    }
+    #day::before {
+      content: "Day: ";
+      font-weight: 500;
+    }
+  }
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.links span {
+  margin-bottom: 5px;
+}
+a {
+  color: #c9f31d;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+a:hover {
+  text-decoration: underline;
+}
