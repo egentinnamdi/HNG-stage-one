@@ -1,10 +1,10 @@
 @media (max-width: 780px) {
   body {
-    min-width: 100vw;
     font-size: 11px;
     color: white;
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
   .first {
     font-size: 18px;
@@ -13,7 +13,7 @@
   }
   #second {
     min-height: 20vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -43,6 +43,7 @@
     gap: 10px;
     min-height: 15vh;
     font-size: 16px;
+    width: 100%;
   }
 
   /* SLACK PROFILE PICTURE */
