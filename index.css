@@ -19,6 +19,7 @@ body {
   display: grid;
   place-items: center;
   font-size: 30px;
+  padding: 20px;
 }
 #second {
   min-height: 75vh;
@@ -89,6 +90,7 @@ footer {
   & {
     span {
       font-weight: 300;
+      display: block;
     }
     #name::before {
       content: "name: ";
